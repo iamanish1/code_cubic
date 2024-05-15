@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="main-box">
+    <div class="sub-main-box">
+        <div class="brand-name">
+          <h2>Hack Learn</h2>
+        </div>
+        <div class="element">
+         <li class="list-el"><a class="click-text" href="courses">Courses</a></li>
+         <li class="list-el"><a class="click-text" href="project">projects</a></li>
+         <li class="list-el"><a class="click-text" href="intern">Internship</a></li>
+         <li class="list-el"><a class="click-text" href="communiity">Community</a></li>
+        </div>
+        <div class="login-button">
+           <Button class="create-account"><a href="singup" style="text-decoration: none ; color: white ;
+           font-size: 2vmin ;">Create Account<a></a></Button>
+        </div>
+    </div>
+    <div class="main-section">
+       <div class="image-box">
+          <img class="Banner-image" src="static/banner1.webp" alt="" height="1000">
+       </div>
+       <div class="text-box">
+        <div class="text">
+          <h1 class="text-heading">Learn to <span class="autotype" style="color: rgb(247, 190, 247);"></span></h1>
+      </div>
+       </div>
+    </div>
+    <div class="service-section">
+      <div class="card1">
+       <a href="courses"><img src="static/course1.jpg" class="service-img"></a>
+       <h1 class="service-heading">Courses</h1>
+      </div>
+      <div class="card2">
+       <a href="intern"><img src="static/jib1.jpg"  class="service-img"></a>
+       <h1 class="service-heading">Internship</h1>
+      </div>
+      <div class="card3">
+        <a href="communiity"><img src="static/community1.jpg"  class="service-img"></a>
+        <h1 class="service-heading">Community</h1>
+       </div> 
+   </div>
+   <div class="footer-section">
+    <div class="footer-box-1">
+       <h1 class="footer-heding">Hack Learn</h1>
+    </div>
+    <div class="footer-box-2">
+       <div class="icon-box">
+         <a href=""><img src="static/facebook.png" alt="" class="footer-image"></a>
+       </div>
+       <div class="icon-box">
+         <a href=""><img src="static/insta-removebg-preview.png" alt=""  class="footer-image"></a>
+       </div>
+       <div class="icon-box">
+         <a href=""><img src="static/linkedin-removebg-preview.png" alt=""  class="footer-image"></a>
+       </div>
+    </div>
+  </div>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('.autotype', {
+        strings: ["Coding like poetry should be short and concise...!!!",
+            "Clean code always looks like it was written by someone who cares...!!!",
+            "Coding is the therapy of the mind...!!!"],
+        typeSpeed: 150,
+        backSpeed: 150,
+        looped: true
+    })
+</script>
+<style>
+    *{
+        margin: 0 ;
+        padding: 0 ;
+        box-sizing: border-box ;
+        font-family: sans-serif;
+        overflow-x: hidden ;
+    }
+    .main-box{
+        max-height: 100vh ;
+        max-width: 100vw ;
+    }
+    .sub-main-box{
+        max-width: 100% ;
+        height: 10vmin ;
+        /* border: 2px solid black ; */
+        background: whitesmoke;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center ;
+        overflow-y: hidden ;
+    }
+.element{
+    display: flex;
+}
+.brand-name{
+    margin-left: 2vmin ;
+}
+.list-el{
+    list-style: none ;
+    padding: 10vmin ;
+}
+.click-text{
+  text-decoration: none ;
+  font-size: 3vmin ;
+  color: black ;
+  font-weight: 300 ;
+}
+.create-account{
+    height: 5vmin ;
+    width : 18vmin ; 
+    background: black ;
+    border-radius: 1.5vmin ;
+    margin-right: 2vmin;
+
+}
+.main-section{
+    max-width: 100vw ;
+    /* height: 50vmin ; */
+    /* border: 2px solid black ; */
+    margin-top: 2vmin ;
+    overflow-y: hidden ;
+    display: flex; 
+    justify-content: center ;
+  
+}
+.image-box{
+  height: 50vmin ;
+  width :110vmin ; 
+  /* border: 2px solid black ; */
+  display: flex;
+  justify-content: center ;
+  border-radius: 2vmin ;
+}
+.text-box{
+  height: 50vmin ;
+  width :110vmin ; 
+  /* border: 2px solid black ; */
+  background: skyblue ;
+  border-radius: 2vmin ;
+
+}
+.Banner-image{
+  max-height: 100%;
+  max-width: 100% ;
+  object-fit: contain ;
+}
+.text-heading{
+  color: white ;
+  font-size: 6vmin ;
+}
+.text{
+  margin-top: 10vmin ;
+  margin-left: 2vmin ;
+}
+.service-section{
+        height: 60vmin ; 
+        width : 100vw ; 
+        /* border: 2px solid  black ; */
+        margin-top: 2vmin ; 
+        background: #bed4d9 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .card1{
+        /* height: 50vmin ; */
+        width : 42vmin ; 
+        /* border: 2px solid black ; */
+        margin-left: 10vmin ;
+        overflow-y: hidden;
+        display: flex;
+       justify-content: center;
+       align-items: center ;
+       flex-direction: column;
+    }
+    .card2{
+        /* height: 50vmin ; */
+        width : 42vmin ; 
+         /* border: 2px solid black ;  */
+        overflow-y: hidden;
+        display: flex;
+       justify-content: center;
+       align-items: center ;
+       flex-direction: column;
+       
+    }
+    .card3{
+       /* height: 50vmin ; */
+       width : 42vmin ; 
+         /* border: 2px solid black ;  */
+        overflow-y: hidden;
+        display: flex;
+       justify-content: center;
+       align-items: center ;
+       flex-direction: column;
+      
+       margin-right: 10vmin  ;
+    }
+     .service-img{
+        max-width:100%;
+        max-height: 100%;
+        object-fit: contain ;
+        border-radius: 3vmin ;
+    }
+    .service-heading{
+      font-size: 7min ;
+      margin-top: 2vmin ;
+    }
+    .footer-section{
+        height: 55vmin ; 
+        width : 100vw ; 
+        border: 2px solid black ;
+        margin-top: 2vmin ;
+        background: #504450 ;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap ;
+    }
+    .footer-box-1{
+        height: 20vmin ;
+        width: 70vmin ;
+        /* border: 2px solid black ; */
+        display: flex;
+        align-items: center ;
+        justify-content: center ;
+        margin-top: 10vmin ;
+    }
+    .footer-box-2{
+         height: 20vmin ; 
+        width: 120vmin ;
+        /* border: 2px solid black ; */
+        margin-right: 5vmin;
+        margin-top: 10vmin ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center ;
+
+    }
+    .footer-heding{
+        color: white ;
+        font-size: 8vmin ;
+        
+    }
+    .icon-box{
+        height: 10vmin ;
+        width: 20vmin ;
+        /* border: 2px solid black ; */
+        overflow-y: hidden ;
+    }
+    .footer-image{
+        max-height: 100%;
+        max-width: 100% ;
+        object-fit: contain ;
+    }
+    /* media query  */
+    /*Small Device Mobiles*/
+@media(max-width:700px){
+    .main-section{
+    max-width: 100vw ;
+    /* height: 50vmin ; */
+    /* border: 2px solid black ; */
+    margin-top: 5vmin ;
+    overflow-y: hidden ;
+    display: flex; 
+    justify-content: center ;
+    flex-wrap: wrap ;
+}
+.image-box{
+  height: 0vmin ;
+  width : 0vmin ; 
+  /* border: 2px solid black ; */
+}
+.text-box{
+  height: 48vmin ;
+  width :111vmin ; 
+  /* border: 2px solid black ; */
+  display: flex; 
+  justify-content: center ;
+}
+.text-heading{
+  color: white ;
+  font-size: 8vmin ;
+}
+.service-section{
+        height: 65vmin ; 
+        width : 100vw ; 
+        /* border: 2px solid  black ; */
+        margin-top: 2vmin ; 
+        background: #bed4d9 ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .card1{
+        height: 50vmin ;
+        width : 42vmin ; 
+        /* border: 2px solid black ; */
+        margin-left: 10vmin ;
+        overflow-y: hidden;
+    }
+    .card2{
+        height: 50vmin ;
+        width : 42vmin ; 
+        /* border: 2px solid black ; */
+        overflow-y: hidden;
+    }
+    .card3{
+        height: 40vmin ;
+        width : 42vmin ; 
+        /* border: 2px solid black ; */
+       margin-right: 15vmin ;
+       background: white;
+       border-radius: 2vmin;
+       overflow-y: hidden;
+       margin-bottom: 10vmin ;
+    }
+
+}
+/*Tab Screens*/
+@media(min-width:701px) and (max-width:900px){
+   
+}
+/*---- End for mobile and tab screens ---*/
+
+/*--- For Mini and medium Laptops(13.5eg: macbook-air) */
+@media(min-width:901px) and (max-width:1280px) {
+   
+    @media(max-height:770px) {
+              /*For Lenovo Thinkpad(small X390)*/
+  
+    }
+    @media(min-height:771px) {
+          /*For macbook(13.5 inch screen)*/
+    }
+     
+    }
+
+/*For macbook(13.5inch eg:macbook-air)*/
+/*--- For Mini and medium Laptops(14inch eg: macbook-air) */
+@media(min-width:1281px) and (max-width:1440px){
+   
+}
+
+/*-----End for macbook-air sized laptops(14 inch) ----*/
+
+/*--- For Large laptop screens(15.6inch)(Ex:- HP-Omen)---*/
+@media(min-width:1441px) and (max-width:1727px){
+  
+}
+/*--- End of Large Screen code ---*/
+/*--- For Very Large laptop screens (Ex:- Large Dell Latitude Screens,Macbook Pro)---*/
+@media(min-width:1728px) and (max-width:2047px){
+   
+}
+
+/*--- For XX Large screens (Ex:- TVs,IMacs...)---*/
+@media(min-width:2048px){
+  
+   
+}
+
+</style>
+</html>
