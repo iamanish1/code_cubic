@@ -15,3 +15,7 @@ def intern(request):
     return render(request,"intern.html")
 def project(request):
     return render(request,"project.html")
+def singuprec(request):
+    return render(request,"singuprec.html")
+def singupteach(request):
+    return render(request,"singupteach.html")

@@ -9,6 +9,8 @@ urlpatterns = [
     path('communiity',views.communiity,name="communiity"),
     path('courses',views.courses,name="courses"),
     path('intern',views.intern,name="intern"),
-    path('project',views.project,name="project")
+    path('project',views.project,name="project"),
+    path('singuprec',views.singuprec,name="singupinrec"),
+    path('singupteach',views.singupteach,name="singupteach")
 
 ]
