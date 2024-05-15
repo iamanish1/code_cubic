@@ -6,6 +6,99 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is  login rec page </h1>
+  <div class="main-box">
+    <div class="sub-main-box">
+         <h2 class="form-heading">Create New Recruiter Account</h2>
+        <form class="form-box" method="post">
+            {% csrf_token %}
+            <h3 class="form-sub-heading" style="margin-right: 55vmin ;">First Name :</h3>
+            <input type="text" name="fname" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 55vmin ;">Last Name :</h3>
+            <input type="text" name="lname" id="" class="input-box">
+            <h3 class="form-sub-heading" style="margin-right: 55vmin ;">User Name :</h3>
+            <input type="text" name="User_name" id="" class="input-box">
+            <h3 class="form-sub-heading" style="margin-right: 60vmin ;">Industry : </h3>
+            <input type="text" name="Education_level" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 50vmin ;">Industry Domain :</h3>
+            <input type="text" name="Email" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 55vmin ;">Password :</h3>
+            <input type="text" name="pass1" id="" class="input-box">
+            <a href="loginrec" class="alrady-account">Already Have Account</a>
+            <button class="create-button" type="submit">Create Account</button>
+</form>
+  </div>
 </body>
+<style>
+    *{
+        margin: 0 ;
+        padding: 0 ;
+        box-sizing: border-box ;
+        font-family: sans-serif ;
+        overflow-x: hidden ;
+    }
+    .main-box{
+        height: 100vh ;
+        width : 100vw ; 
+        display: flex; 
+        justify-content: center ;
+        align-items: center ;
+        background: whitesmoke  ; 
+    }
+    .sub-main-box{
+        width : 120vmin  ; 
+        /* height: 70% ; */
+        /* border: 2px solid black ; */
+        background:  skyblue ;
+        border-radius: 1.5vmin ;
+        display: flex; 
+        align-items: center ;
+        flex-direction: column ;
+        margin-top: 2vmin ;
+        margin-bottom: 2vmin ;
+    }
+    .form-box{
+        margin-top: 5vmin ;
+    }
+    .form-sub-heading{
+        margin-top: 2vmin ;
+        margin-right: 50vmin ;
+       
+    }
+    .input-box{
+        width : 75vmin ;
+        height: 4vmin ; 
+        margin-top: 2vmin ;
+        font-size: 2vmin ;
+        color: black;
+        font-weight: 300;
+        border-radius: 1.5vmin ;
+        margin-bottom: 2vmin ;
+        margin-left: 2vmin ;
+         
+    }
+    .form-heading{
+        margin-top: 2vmin ;
+    }
+    .alrady-account{
+        color: black ;
+        font-size: 2vmin ;
+    }
+    .create-button{
+        height: 5vmin ;
+        width : 45vmin ; 
+        margin-top: 2vmin ;
+        margin-bottom: 2vmin ;
+        font-size: 2vmin ;
+        color: white ;
+        background: black ;
+        border-radius: 2vmin ;
+    }
+    .form-box{
+        display: flex; 
+        justify-content: center ;
+        align-items: center ;
+        flex-direction: column ;
+    }
+  
+</style>
 </html>

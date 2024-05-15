@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -8,29 +9,33 @@
 <body>
   <div class="main-box">
     <div class="sub-main-box">
-        <h2 class="form-heading">Login student Account</h2>
-       <form class="form-box" method="POST">
-        {% csrf_token %}
-           <h3 class="form-sub-heading" style="margin-right: 60vmin ;">Username:</h3>
-           <input type="text" name="username" id="" class="input-box">
-           <h3 class="form-sub-heading"style="margin-right: 62vmin ;">Email :</h3>
-           <input type="text" name="Email" id="" class="input-box">
-           <h3 class="form-sub-heading"style="margin-right: 55vmin ;">Password :</h3>
-           <input type="text" name="pass1" id="" class="input-box">
-           <button id="btn1"><a href="singupstud" class="alrady-account" id="alrady-account">Create New Account</a></button> 
-           <button class="create-button" type="submit">login Account</button>
-</form> 
+         <h2 class="form-heading">Create New Student Account</h2>
+        <form class="form-box" method="post">
+            {% csrf_token %}
+            <h3 class="form-sub-heading" style="margin-right: 55vmin ;">First Name :</h3>
+            <input type="text" name="fname" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 55vmin ;">Last Name :</h3>
+            <input type="text" name="lname" id="" class="input-box">
+            <h3 class="form-sub-heading" style="margin-right: 55vmin ;">User Name :</h3>
+            <input type="text" name="User_name" id="" class="input-box">
+            <h3 class="form-sub-heading">Education Level : </h3>
+            <input type="text" name="Education_level" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 62vmin ;">Email :</h3>
+            <input type="text" name="Email" id="" class="input-box">
+            <h3 class="form-sub-heading"style="margin-right: 55vmin ;">Password :</h3>
+            <input type="text" name="pass1" id="" class="input-box">
+            <a href="login" class="alrady-account">Already Have Account</a>
+            <button class="create-button" type="submit">Create Account</button>
+</form>
   </div>
 </body>
-<script>
-  
-</script>
 <style>
-       *{
+    *{
         margin: 0 ;
         padding: 0 ;
         box-sizing: border-box ;
         font-family: sans-serif ;
+        overflow-x: hidden ;
     }
     .main-box{
         height: 100vh ;
@@ -38,17 +43,19 @@
         display: flex; 
         justify-content: center ;
         align-items: center ;
-        background: whitesmoke ; 
+        background: whitesmoke  ; 
     }
     .sub-main-box{
         width : 120vmin  ; 
         /* height: 70% ; */
         /* border: 2px solid black ; */
-        background: skyblue ;
+        background:  skyblue ;
         border-radius: 1.5vmin ;
         display: flex; 
         align-items: center ;
         flex-direction: column ;
+        margin-top: 2vmin ;
+        margin-bottom: 2vmin ;
     }
     .form-box{
         margin-top: 5vmin ;
@@ -67,7 +74,8 @@
         font-weight: 300;
         border-radius: 1.5vmin ;
         margin-bottom: 2vmin ;
-        
+        margin-left: 2vmin ;
+         
     }
     .form-heading{
         margin-top: 2vmin ;
@@ -91,12 +99,6 @@
         justify-content: center ;
         align-items: center ;
         flex-direction: column ;
-    }
-    #btn1{
-      height: 3vmin ;
-      width : 30vmin ; 
-      background: skyblue;
-      border: none ;
     }
   
 </style>

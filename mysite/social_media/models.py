@@ -1,13 +1,32 @@
 from django.db import models
 
 # Create your models here.
-class Reguser(models.Model):
+class Reguserstud(models.Model):
     FirstName=models.TextField()
     LastName=models.TextField()
     Username=models.TextField()
+    EducationLevel=models.TextField()
     email=models.EmailField()
-    catogery=models.TextField()
     password=models.TextField()
+
+class Reguserteach(models.Model):
+    FirstName=models.TextField()
+    LastName=models.TextField()
+    Username=models.TextField()
+    TeachingExp=models.TextField()
+    TeachingDomain=models.TextField()
+    email=models.EmailField()
+    password=models.TextField()
+
+class ReguserRec(models.Model):
+    FirstName=models.TextField()
+    LastName=models.TextField()
+    Username=models.TextField()
+    Industry=models.TextField()
+    Domain=models.TextField()
+    email=models.EmailField()
+    password=models.TextField()
+
 
 class Courses(models.Model):
     CourseId=models.IntegerField()

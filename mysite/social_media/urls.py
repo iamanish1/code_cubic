@@ -11,6 +11,10 @@ urlpatterns = [
     path('intern',views.intern,name="intern"),
     path('project',views.project,name="project"),
     path('singuprec',views.singuprec,name="singupinrec"),
-    path('singupteach',views.singupteach,name="singupteach")
+    path('singupteach',views.singupteach,name="singupteach"),
+    path('singupstud',views.singupstud,name="singupstud"),
+    path('loginteach',views.loginteach,name="loginteach"),
+    path('loginrec',views.loginrec,name="loginrec"),
+    path('user',views.user,name="user")
 
 ]
